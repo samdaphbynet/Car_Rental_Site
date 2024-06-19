@@ -1,20 +1,13 @@
 "use client"
 
-// import { CustomButtonProps } from '@/types'
-import React, { MouseEventHandler } from 'react'
+import { CustomButtonProps } from '@/types'
 
-interface CustomButtonProps {
-    title: string;
-    containerStyles?: string;
-    handleClick?: MouseEventHandler<HTMLButtonElement>;
-}
-
-const CustomButton = ({title, containerStyles, handleClick} : CustomButtonProps) => {
+const CustomButton = ({title, containerStyles, handleClick, btnType} : CustomButtonProps) => {
   return (
     <button
         disabled={false}
         className={`custom-btn ${containerStyles}`}
-        type={"button"}
+        type={btnType || "submit"}
         onClick={handleClick}
     >
         <span className={'flex-1'}>{title}</span>
