@@ -8,8 +8,6 @@ const SearchBar = () => {
 
     const [manufacture, setManufacture] = useState("");
 
-    console.log("manu: ",manufacture)
-
     const handleSearch = () => {
         console.log("Vehicule")
     }
