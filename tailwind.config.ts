@@ -28,6 +28,7 @@ module.exports = {
         'pattern': "url('/pattern.png')",
         'hero-bg': "url('/hero-bg.png')",
         'section-search': "url('/bg-search.jpg')",
+        'hero_bg': "url('/hero_bg1.jpg')",
       }
     },
   },
