@@ -2,7 +2,7 @@ import SearchBar from '@/components/SearchBar';
 import Hero from '../components/Hero';
 import CustomFilter from '@/components/CustomFilter';
 import { fetchData } from '@/utils';
-import CarCard from '@/components/CarCard';
+import CarCard from '@/components/carCards/CarCard';
 import { fuels, yearsOfProduction } from '@/constants';
 import ShowMore from '@/components/ShowMore';
 
@@ -21,13 +21,13 @@ export default async function Home({ searchParams }: any) {
         <main className="overflow-hidden">
             <Hero />
 
-            <div className='border mt-12 padding-x padding-y max-width' id='discover'>
+            <div className='border border-gray-600 rounded mt-12 padding-x padding-y max-width' id='discover'>
                 <div className='home__text-container'>
                     <h1 className='text-4xl font-extrabold'>Catalogue des voitures</h1>
                     <p>Découvrez les voitures qui pourraient vous plaire</p>
                 </div>
 
-                <div className='home__filters'>
+                <div className='home__filters border border-gray-600 p-5'>
                     <SearchBar />
 
                     <div className='home__filter-container'>

@@ -5,7 +5,7 @@ import { CarsProps } from '@/types'
 import { calculateCarRent } from '@/utils'
 import React from 'react'
 import Image from 'next/image';
-import CustomButton from './CustomButton';
+import CustomButton from '../CustomButton';
 import CarDetails from './CarDetails'
 
 interface CarsCardProps {
